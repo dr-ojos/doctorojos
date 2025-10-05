@@ -437,14 +437,13 @@ footer p {
     }
 
     .hero {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr;
         padding: 2.5rem 1.5rem;
-        gap: 1.5rem;
-        align-items: center;
+        gap: 2rem;
     }
 
     .hero-content {
-        order: 1;
+        order: 2;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -466,13 +465,23 @@ footer p {
     }
 
     .hero-image {
-        order: 2;
+        order: 1;
+        width: 100%;
+        height: 200px;
+        border-radius: 24px;
+        overflow: hidden;
+        position: relative;
+        background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
     }
 
     .hero-image-photo {
-        width: 140px;
-        height: 170px;
-        border-radius: 20px;
+        width: auto;
+        height: 100%;
+        border-radius: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        object-position: right center;
     }
 
     .services {
@@ -593,7 +602,7 @@ footer p {
 /* Extra small phones */
 @media (max-width: 390px) {
     .hero {
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 2rem 1.2rem;
     }
 
@@ -606,9 +615,8 @@ footer p {
         font-size: 0.95rem;
     }
 
-    .hero-image-photo {
-        width: 120px;
-        height: 145px;
+    .hero-image {
+        height: 180px;
     }
 
     .btn-primary {
@@ -654,8 +662,7 @@ footer p {
         font-size: 2rem;
     }
 
-    .hero-image-photo {
-        width: 130px;
-        height: 155px;
+    .hero-image {
+        height: 160px;
     }
 }

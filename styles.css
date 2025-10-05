@@ -232,6 +232,44 @@ nav {
     position: relative;
 }
 
+/* Quote Section Blue */
+.quote-section-blue {
+    background: linear-gradient(135deg, #0EA5E9 0%, #06B6D4 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-section-blue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.quote-section-blue h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+.quote-section-blue p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    opacity: 0.95;
+    position: relative;
+}
+
 /* About Section */
 .about {
     max-width: 1200px;
@@ -514,16 +552,19 @@ footer p {
         font-size: 1rem;
     }
 
-    .quote-section {
+    .quote-section,
+    .quote-section-blue {
         padding: 4rem 1.5rem;
     }
 
-    .quote-section h2 {
+    .quote-section h2,
+    .quote-section-blue h2 {
         font-size: 2.3rem;
         line-height: 1.3;
     }
 
-    .quote-section p {
+    .quote-section p,
+    .quote-section-blue p {
         font-size: 1.15rem;
     }
 
@@ -644,7 +685,8 @@ footer p {
         font-size: 1.9rem;
     }
 
-    .quote-section h2 {
+    .quote-section h2,
+    .quote-section-blue h2 {
         font-size: 1.7rem;
     }
 

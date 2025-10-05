@@ -438,21 +438,16 @@ footer p {
 
     .hero {
         grid-template-columns: 1fr auto;
-        padding: 2.5rem 1.5rem;
+        padding: 2rem 1.5rem 2.5rem;
         gap: 1.5rem;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .hero-content {
         order: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-content h1,
-    .hero-content p {
-        align-self: flex-start;
+        align-items: flex-start;
     }
 
     .hero-content h1 {
@@ -460,25 +455,33 @@ footer p {
         text-align: left;
         letter-spacing: -0.8px;
         line-height: 1.1;
+        margin-bottom: 0;
     }
 
     .hero-content p {
         font-size: 1rem;
         text-align: left;
         max-width: 100%;
+        margin-top: 200px;
         margin-bottom: 1.5rem;
         line-height: 1.6;
         font-weight: 700;
+        align-self: flex-start;
     }
 
     .hero-image {
         order: 2;
+        margin-top: 0;
     }
 
     .hero-image-photo {
-        width: 140px;
-        height: 170px;
+        width: 180px;
+        height: 215px;
         border-radius: 20px;
+    }
+
+    .btn-primary {
+        align-self: center;
     }
 
     .services {
@@ -528,8 +531,8 @@ footer p {
 
     .about-image {
         width: 100%;
-        max-width: 100%;
-        height: 400px;
+        max-width: 280px;
+        height: 350px;
         margin: 0 auto;
         display: block;
     }
@@ -600,7 +603,7 @@ footer p {
 @media (max-width: 390px) {
     .hero {
         gap: 1rem;
-        padding: 2rem 1.2rem;
+        padding: 1.8rem 1.2rem 2rem;
     }
 
     .hero-content h1 {
@@ -610,16 +613,22 @@ footer p {
 
     .hero-content p {
         font-size: 0.95rem;
+        margin-top: 170px;
     }
 
     .hero-image-photo {
-        width: 120px;
-        height: 145px;
+        width: 155px;
+        height: 185px;
     }
 
     .btn-primary {
         padding: 0.8rem 1.3rem;
         font-size: 0.9rem;
+    }
+
+    .about-image {
+        max-width: 250px;
+        height: 310px;
     }
 
     .services h2,
@@ -653,15 +662,19 @@ footer p {
 /* Landscape mobile optimization */
 @media (max-width: 768px) and (orientation: landscape) {
     .hero {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.5rem;
     }
 
     .hero-content h1 {
         font-size: 2rem;
     }
 
+    .hero-content p {
+        margin-top: 160px;
+    }
+
     .hero-image-photo {
-        width: 130px;
-        height: 155px;
+        width: 160px;
+        height: 190px;
     }
 }

@@ -445,6 +445,9 @@ footer p {
 
     .hero-content {
         order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .hero-content h1 {
@@ -539,6 +542,7 @@ footer p {
         padding: 0.85rem 1.5rem;
         font-size: 0.95rem;
         gap: 0.4rem;
+        align-self: center;
     }
 
     .booking {

@@ -105,6 +105,8 @@ nav {
     object-fit: cover;
     box-shadow: 0 25px 70px rgba(79, 70, 229, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    mix-blend-mode: multiply;
 }
 
 .hero-image-photo:hover {
@@ -239,128 +241,87 @@ nav {
     font-size: 1.1rem;
 }
 
-/* Locations Section */
-.locations {
-    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-    padding: 6rem 2rem;
+/* Booking Section */
+.booking {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    padding: 5rem 2rem;
 }
 
-.locations-container {
-    max-width: 1200px;
+.booking-container {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.locations h2 {
+.booking h2 {
     text-align: center;
     font-size: 3rem;
-    color: #1a202c;
+    color: white;
     margin-bottom: 1rem;
     font-weight: 800;
     letter-spacing: -1px;
 }
 
-.locations-subtitle {
+.booking-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: #4a5568;
+    color: white;
     margin-bottom: 3rem;
+    opacity: 0.95;
 }
 
-.location-cards {
+.booking-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
-.location-card {
+.booking-card {
     background: white;
     padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid #e2e8f0;
-    text-decoration: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
 }
 
-.location-card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.15);
-    border-color: #4F46E5;
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
 }
 
-.location-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.location-card h3 {
+.booking-card-header h3 {
     color: #1a202c;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
-.location-card p {
+.location-text {
     color: #4a5568;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.location-link {
-    color: #4F46E5;
-    font-weight: 600;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
 }
 
-.location-card:hover .location-link {
-    transform: translateX(5px);
-    display: inline-block;
-}
-
-/* CTA Section */
-.cta {
-    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
-    padding: 5rem 2rem;
+.btn-booking {
+    display: block;
     text-align: center;
-}
-
-.cta h2 {
-    font-size: 3rem;
+    padding: 0.9rem 1.5rem;
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
     color: white;
-    margin-bottom: 1rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-}
-
-.cta p {
-    font-size: 1.3rem;
-    color: white;
-    margin-bottom: 2.5rem;
-    opacity: 0.95;
-}
-
-.btn {
-    display: inline-block;
-    padding: 1.2rem 3rem;
-    background: white;
-    color: #4F46E5;
     text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 700;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
 }
 
-.btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+.btn-booking:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+    background: linear-gradient(135deg, #4338CA 0%, #6D28D9 100%);
 }
 
 /* Footer */
@@ -492,46 +453,40 @@ footer p {
         line-height: 1.8;
     }
 
-    .locations {
+    .booking {
         padding: 4rem 1.5rem;
     }
 
-    .locations h2 {
-        font-size: 2.5rem;
+    .booking h2 {
+        font-size: 2.2rem;
     }
 
-    .locations-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .location-cards {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .location-card {
-        padding: 1.8rem;
-    }
-
-    .cta {
-        padding: 4rem 1.5rem;
-    }
-
-    .cta h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .cta p {
-        font-size: 1.15rem;
+    .booking-subtitle {
+        font-size: 1.05rem;
         margin-bottom: 2rem;
     }
 
-    .btn {
-        padding: 1.1rem 2.5rem;
+    .booking-cards {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .booking-card {
+        padding: 1.5rem;
+    }
+
+    .booking-card-header h3 {
         font-size: 1.1rem;
-        display: inline-block;
-        width: auto;
+    }
+
+    .location-text {
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn-booking {
+        padding: 0.85rem 1.3rem;
+        font-size: 0.95rem;
     }
 
     footer {
@@ -551,9 +506,8 @@ footer p {
     }
 
     .services h2,
-    .locations h2,
-    .about-content h2,
-    .cta h2 {
+    .booking h2,
+    .about-content h2 {
         font-size: 2rem;
     }
 

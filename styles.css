@@ -316,25 +316,20 @@ nav {
 
 .booking-card {
     background: white;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 24px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 2px solid #e2e8f0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .booking-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 60px rgba(79, 70, 229, 0.2);
     border-color: #4F46E5;
-}
-
-.booking-icon {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
 }
 
 .booking-card-content h3 {
@@ -437,33 +432,39 @@ footer p {
     }
 
     .hero {
-        grid-template-columns: 1fr;
-        padding: 2rem 1.5rem;
-        gap: 2.5rem;
+        grid-template-columns: 1fr auto;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .hero-content {
+        order: 1;
     }
 
     .hero-content h1 {
-        font-size: 3.2rem;
+        font-size: 2.5rem;
         text-align: left;
-        letter-spacing: -1px;
+        letter-spacing: -0.8px;
+        line-height: 1.1;
     }
 
     .hero-content p {
-        font-size: 1.15rem;
+        font-size: 1rem;
         text-align: left;
         max-width: 100%;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
     }
 
     .hero-image {
-        order: -1;
+        order: 2;
     }
 
     .hero-image-photo {
-        width: 100%;
-        max-width: 100%;
-        height: 400px;
-        margin: 0 auto;
-        display: block;
+        width: 140px;
+        height: 170px;
+        border-radius: 20px;
     }
 
     .services {
@@ -530,8 +531,9 @@ footer p {
     }
 
     .btn-primary {
-        padding: 1rem 2rem;
-        font-size: 1.05rem;
+        padding: 0.85rem 1.5rem;
+        font-size: 0.95rem;
+        gap: 0.4rem;
     }
 
     .booking {
@@ -539,41 +541,38 @@ footer p {
     }
 
     .booking-header {
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
 
     .booking h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .booking-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .booking-cards {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
     .booking-card {
-        padding: 2rem;
-    }
-
-    .booking-icon {
-        font-size: 2.5rem;
+        padding: 1.5rem;
+        gap: 1rem;
     }
 
     .booking-card-content h3 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
     }
 
     .location-address {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .btn-booking {
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
+        padding: 0.9rem 1.3rem;
+        font-size: 0.95rem;
     }
 
     footer {
@@ -584,27 +583,38 @@ footer p {
 
 /* Extra small phones */
 @media (max-width: 390px) {
+    .hero {
+        gap: 1rem;
+        padding: 2rem 1.2rem;
+    }
+
     .hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
     }
 
     .hero-image-photo {
-        height: 350px;
+        width: 120px;
+        height: 145px;
     }
 
     .btn-primary {
-        padding: 0.9rem 1.8rem;
-        font-size: 1rem;
+        padding: 0.8rem 1.3rem;
+        font-size: 0.9rem;
     }
 
     .services h2,
     .booking h2,
     .about-content h2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .quote-section h2 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
     }
 
     .about-image {
@@ -612,15 +622,31 @@ footer p {
     }
 
     .booking-card {
-        padding: 1.5rem;
+        padding: 1.3rem;
     }
 
-    .booking-icon {
-        font-size: 2rem;
+    .booking-card-content h3 {
+        font-size: 1.05rem;
     }
 
     .btn-booking {
-        padding: 0.9rem 1.3rem;
-        font-size: 0.95rem;
+        padding: 0.85rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image-photo {
+        width: 130px;
+        height: 155px;
     }
 }

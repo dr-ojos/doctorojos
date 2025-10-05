@@ -84,6 +84,11 @@ nav {
     letter-spacing: -1.5px;
 }
 
+.hero-content h1 .greeting {
+    color: #64748b;
+    font-weight: 600;
+}
+
 .hero-content p {
     font-size: 1.4rem;
     color: #4a5568;

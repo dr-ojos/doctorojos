@@ -635,7 +635,10 @@ footer p {
         height: 310px;
     }
 
-    .services h2,
+    .services h2 {
+        font-size: 1.8rem;
+    }
+
     .booking h2,
     .about-content h2 {
         font-size: 1.9rem;

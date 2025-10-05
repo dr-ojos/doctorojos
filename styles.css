@@ -459,6 +459,11 @@ footer p {
         text-align: left;
         letter-spacing: -0.8px;
         line-height: 1.1;
+        position: absolute;
+        top: 2.5rem;
+        left: 1.5rem;
+        z-index: 2;
+        margin-bottom: 0;
     }
 
     .hero-content p {
@@ -467,6 +472,7 @@ footer p {
         max-width: 100%;
         margin-bottom: 1.5rem;
         line-height: 1.6;
+        font-weight: 700;
     }
 
     .hero-image {
@@ -477,6 +483,7 @@ footer p {
         overflow: hidden;
         position: relative;
         background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+        margin-bottom: 0;
     }
 
     .hero-image-photo {
@@ -614,6 +621,8 @@ footer p {
     .hero-content h1 {
         font-size: 2.2rem;
         letter-spacing: -0.5px;
+        top: 2rem;
+        left: 1.2rem;
     }
 
     .hero-content p {

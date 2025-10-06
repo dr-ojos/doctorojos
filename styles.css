@@ -501,12 +501,11 @@ footer p {
 
     .hero {
         display: grid;
-        grid-template-columns: 1fr 280px;
+        grid-template-columns: 1fr 220px;
         grid-template-rows: auto auto auto;
         padding: 2rem 1.5rem 2.5rem;
         gap: 1.5rem;
         align-items: start;
-        overflow-x: hidden;
     }
 
     .hero-content {
@@ -541,8 +540,8 @@ footer p {
     }
 
     .hero-image-photo {
-        width: 280px;
-        height: 336px;
+        width: 220px;
+        height: 264px;
         border-radius: 20px;
     }
 
@@ -673,10 +672,9 @@ footer p {
 /* Extra small phones */
 @media (max-width: 390px) {
     .hero {
-        grid-template-columns: 1fr 250px;
+        grid-template-columns: 1fr 190px;
         gap: 1rem;
         padding: 1.8rem 1.2rem 2rem;
-        overflow-x: hidden;
     }
 
     .hero-content h1 {
@@ -689,8 +687,8 @@ footer p {
     }
 
     .hero-image-photo {
-        width: 250px;
-        height: 300px;
+        width: 190px;
+        height: 228px;
     }
 
     .btn-primary {

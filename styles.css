@@ -485,7 +485,8 @@ footer p {
 
     nav {
         padding: 0 1.5rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .logo {
@@ -493,15 +494,15 @@ footer p {
     }
 
     .nav-links {
-        gap: 1rem;
-        font-size: 0.85rem;
-        flex-wrap: wrap;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        width: 100%;
         justify-content: center;
     }
 
     .hero {
         display: grid;
-        grid-template-columns: 1fr 220px;
+        grid-template-columns: 1fr 160px;
         grid-template-rows: auto auto auto;
         padding: 2rem 1.5rem 2.5rem;
         gap: 1.5rem;
@@ -540,9 +541,9 @@ footer p {
     }
 
     .hero-image-photo {
-        width: 220px;
-        height: 264px;
-        border-radius: 20px;
+        width: 160px;
+        height: 200px;
+        border-radius: 16px;
     }
 
     .btn-primary {
@@ -672,7 +673,7 @@ footer p {
 /* Extra small phones */
 @media (max-width: 390px) {
     .hero {
-        grid-template-columns: 1fr 190px;
+        grid-template-columns: 1fr 150px;
         gap: 1rem;
         padding: 1.8rem 1.2rem 2rem;
     }
@@ -687,8 +688,8 @@ footer p {
     }
 
     .hero-image-photo {
-        width: 190px;
-        height: 228px;
+        width: 150px;
+        height: 187px;
     }
 
     .btn-primary {

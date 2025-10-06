@@ -383,6 +383,14 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.location-address:hover {
+    color: #4F46E5;
+    text-decoration: underline;
 }
 
 .btn-booking {

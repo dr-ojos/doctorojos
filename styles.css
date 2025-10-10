@@ -102,7 +102,7 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 1.2rem 2.5rem;
+    padding: 1.2rem 3.5rem;
     background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
     color: white;
     text-decoration: none;
@@ -513,7 +513,7 @@ footer p {
         grid-template-columns: 1fr 240px;
         grid-template-rows: auto auto auto;
         padding: 2rem 1.5rem 2.5rem;
-        gap: 1rem;
+        gap: 0.5rem;
         align-items: start;
     }
 
@@ -529,7 +529,8 @@ footer p {
         text-align: left;
         letter-spacing: -0.8px;
         line-height: 1.1;
-        align-self: center;
+        align-self: start;
+        padding-left: 1rem;
     }
 
     .hero-content p {
@@ -545,9 +546,9 @@ footer p {
     .hero-image {
         grid-column: 2;
         grid-row: 1;
-        align-self: stretch;
+        align-self: start;
         display: flex;
-        align-items: stretch;
+        align-items: flex-start;
     }
 
     .hero-image-photo {
@@ -632,7 +633,7 @@ footer p {
     }
 
     .btn-primary {
-        padding: 0.85rem 1.5rem;
+        padding: 0.85rem 4.5rem;
         font-size: 0.95rem;
         gap: 0.4rem;
         align-self: center;

@@ -1,0 +1,41 @@
+# robots.txt para doctorojos.com
+# Optimizado para Google, Bing, ChatGPT, Gemini y otros crawlers
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /*.backup$
+
+# Crawlers de IA y LLMs
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: Bard
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.doctorojos.com/sitemap.xml

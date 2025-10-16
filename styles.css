@@ -103,20 +103,20 @@ nav {
     align-items: center;
     gap: 0.5rem;
     padding: 1.2rem 3.5rem;
-    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    background: linear-gradient(135deg, #FF8C00 0%, #FF6B00 100%);
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4);
+    box-shadow: 0 10px 30px rgba(255, 140, 0, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.5);
-    background: linear-gradient(135deg, #4338CA 0%, #6D28D9 100%);
+    box-shadow: 0 15px 40px rgba(255, 140, 0, 0.5);
+    background: linear-gradient(135deg, #FF7700 0%, #FF5500 100%);
 }
 
 .hero-image {
@@ -364,12 +364,42 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    position: relative;
 }
 
 .booking-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 60px rgba(79, 70, 229, 0.2);
     border-color: #4F46E5;
+}
+
+.phone-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF8C00 0%, #FF6B00 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.phone-button:hover {
+    transform: scale(1.1) rotate(15deg);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.5);
+    background: linear-gradient(135deg, #FF7700 0%, #FF5500 100%);
+}
+
+.phone-button svg {
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .booking-card-content h3 {
@@ -402,14 +432,14 @@ nav {
     justify-content: center;
     gap: 0.75rem;
     padding: 1.1rem 2rem;
-    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    background: linear-gradient(135deg, #FF8C00 0%, #FF6B00 100%);
     color: white;
     text-decoration: none;
     border-radius: 16px;
     font-size: 1.1rem;
     font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.35);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.35);
     position: relative;
     overflow: hidden;
 }
@@ -431,8 +461,8 @@ nav {
 
 .btn-booking:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(79, 70, 229, 0.45);
-    background: linear-gradient(135deg, #4338CA 0%, #6D28D9 100%);
+    box-shadow: 0 12px 35px rgba(255, 140, 0, 0.45);
+    background: linear-gradient(135deg, #FF7700 0%, #FF5500 100%);
 }
 
 .btn-booking svg {

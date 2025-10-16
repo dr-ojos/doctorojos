@@ -157,6 +157,15 @@
     }
     </script>
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Q5ECKTJW8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6Q5ECKTJW8');
+    </script>
+
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
     {
@@ -205,7 +214,7 @@
         <div class="hero-content">
             <h1><span class="greeting">¡hola! soy</span><br>Dr. José<br>Peña</h1>
             <p>Médico Oftalmólogo, bueno para el chocolate y los libros.</p>
-            <a href="#contacto" class="btn-primary" aria-label="Reservar hora con Dr. José Peña">Reservar Hora</a>
+            <a href="#contacto" class="btn-primary" aria-label="Reservar hora con Dr. José Peña">Reserva tu Hora</a>
         </div>
         <div class="hero-image">
             <img src="doctorojos.AVIF" alt="Dr. José Peña - Oftalmólogo especialista en Santiago" loading="eager" width="400" height="480" class="hero-image-photo">
@@ -265,6 +274,11 @@
             </div>
             <div class="booking-cards">
                 <div class="booking-card">
+                    <a href="tel:+56222702700" class="phone-button" aria-label="Llamar a Clínica Dávila Las Condes">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
                     <div class="booking-card-content">
                         <h3>Clínica Dávila Las Condes</h3>
                         <a href="https://www.google.com/maps/search/?api=1&query=Av.+El+Bosque+Nte.+0110,+7550181+Las+Condes,+Región+Metropolitana" target="_blank" rel="noopener noreferrer" class="location-address">
@@ -272,13 +286,18 @@
                         </a>
                     </div>
                     <a href="https://www.davila.cl" target="_blank" rel="noopener noreferrer" class="btn-booking">
-                        <span>Reservar Hora</span>
+                        <span>Reserva tu Hora</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
                 </div>
                 <div class="booking-card">
+                    <a href="tel:+56222702700" class="phone-button" aria-label="Llamar a Clínica Dávila Ñuñoa">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
                     <div class="booking-card-content">
                         <h3>Clínica Dávila Ñuñoa</h3>
                         <a href="https://www.google.com/maps/search/?api=1&query=Av.+Irarrázaval+2401,+7750495+Ñuñoa,+Región+Metropolitana" target="_blank" rel="noopener noreferrer" class="location-address">
@@ -286,13 +305,13 @@
                         </a>
                     </div>
                     <a href="https://www.davila.cl" target="_blank" rel="noopener noreferrer" class="btn-booking">
-                        <span>Reservar Hora</span>
+                        <span>Reserva tu Hora</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
                 </div>
-                <div class="booking-card">
+                <!-- <div class="booking-card">
                     <div class="booking-card-content">
                         <h3>Clínica RedSalud Providencia</h3>
                         <a href="https://www.google.com/maps/search/?api=1&query=Av.+Salvador+100,+7500995+Santiago,+Providencia,+Región+Metropolitana" target="_blank" rel="noopener noreferrer" class="location-address">
@@ -300,13 +319,18 @@
                         </a>
                     </div>
                     <a href="https://www.redsalud.cl" target="_blank" rel="noopener noreferrer" class="btn-booking">
-                        <span>Reservar Hora</span>
+                        <span>Reserva tu Hora</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                </div>
+                </div> -->
                 <div class="booking-card">
+                    <a href="tel:+56233033461" class="phone-button" aria-label="Llamar a Clínica Oftalmológica 20/20">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </a>
                     <div class="booking-card-content">
                         <h3>Clínica Oftalmológica 20/20</h3>
                         <a href="https://www.google.com/maps/search/?api=1&query=Asturias+335,+7550241+Santiago,+Las+Condes,+Región+Metropolitana" target="_blank" rel="noopener noreferrer" class="location-address">
@@ -314,7 +338,7 @@
                         </a>
                     </div>
                     <a href="https://agendaweb.salutem.cl/app/agenda-web/05ED/clinica-2020/agenda" target="_blank" rel="noopener noreferrer" class="btn-booking">
-                        <span>Reservar Hora</span>
+                        <span>Reserva tu Hora</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -339,5 +363,78 @@
             </div>
         </div>
     </footer>
+
+    <!-- Google Analytics Event Tracking -->
+    <script>
+        // Trackear clicks en botones de reserva
+        document.addEventListener('DOMContentLoaded', function() {
+            // Botón principal hero
+            const heroCta = document.querySelector('.btn-primary');
+            if (heroCta) {
+                heroCta.addEventListener('click', function() {
+                    gtag('event', 'click_reserva', {
+                        'event_category': 'engagement',
+                        'event_label': 'Hero CTA Button',
+                        'button_location': 'Hero Section'
+                    });
+                });
+            }
+
+            // Botones de reserva de cada clínica
+            const bookingButtons = document.querySelectorAll('.btn-booking');
+            bookingButtons.forEach(function(button, index) {
+                button.addEventListener('click', function() {
+                    const card = button.closest('.booking-card');
+                    const clinicName = card.querySelector('h3').textContent;
+                    gtag('event', 'click_reserva_clinica', {
+                        'event_category': 'conversion',
+                        'event_label': clinicName,
+                        'clinic_name': clinicName
+                    });
+                });
+            });
+
+            // Botones de teléfono
+            const phoneButtons = document.querySelectorAll('.phone-button');
+            phoneButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const card = button.closest('.booking-card');
+                    const clinicName = card.querySelector('h3').textContent;
+                    const phoneNumber = button.getAttribute('href').replace('tel:', '');
+                    gtag('event', 'click_telefono', {
+                        'event_category': 'conversion',
+                        'event_label': clinicName,
+                        'clinic_name': clinicName,
+                        'phone_number': phoneNumber
+                    });
+                });
+            });
+
+            // Trackear clicks en tarjetas de servicios
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(function(card) {
+                card.addEventListener('click', function() {
+                    const serviceName = card.querySelector('h3').textContent;
+                    gtag('event', 'click_servicio', {
+                        'event_category': 'engagement',
+                        'event_label': serviceName,
+                        'service_name': serviceName
+                    });
+                });
+            });
+
+            // Trackear click en Instagram
+            const instagramLink = document.querySelector('.instagram-link');
+            if (instagramLink) {
+                instagramLink.addEventListener('click', function() {
+                    gtag('event', 'click_social', {
+                        'event_category': 'engagement',
+                        'event_label': 'Instagram',
+                        'social_network': 'Instagram'
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

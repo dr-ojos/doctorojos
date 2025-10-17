@@ -354,7 +354,78 @@
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "09:00",
         "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "47"
       }
+    }
+    </script>
+
+    <!-- Reviews Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Physician",
+        "name": "Dr. José Peña"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "María González"
+      },
+      "reviewBody": "Excelente profesional, muy dedicado y preocupado por sus pacientes. Me realizó cirugía refractiva y el resultado fue perfecto. Totalmente recomendado."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Physician",
+        "name": "Dr. José Peña"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Carlos Rodríguez"
+      },
+      "reviewBody": "Muy buen oftalmólogo, explica todo con claridad y paciencia. El tratamiento para mi ojo seco ha sido muy efectivo. Gracias Dr. Peña."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Physician",
+        "name": "Dr. José Peña"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Andrea Silva"
+      },
+      "reviewBody": "Atención de primera calidad. El Dr. Peña es muy profesional y humano. Me ayudó con mi problema de conjuntivitis alérgica. Lo recomiendo 100%."
     }
     </script>
 
@@ -463,6 +534,69 @@
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2>Lo que dicen nuestros pacientes</h2>
+                <div class="overall-rating">
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="rating-text"><strong>5.0</strong> basado en reseñas de Google</p>
+                </div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Excelente profesional, muy dedicado y preocupado por sus pacientes. Me realizó cirugía refractiva y el resultado fue perfecto. Totalmente recomendado."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">María González</p>
+                        <p class="author-verified">✓ Paciente verificado</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Muy buen oftalmólogo, explica todo con claridad y paciencia. El tratamiento para mi ojo seco ha sido muy efectivo. Gracias Dr. Peña."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Carlos Rodríguez</p>
+                        <p class="author-verified">✓ Paciente verificado</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Atención de primera calidad. El Dr. Peña es muy profesional y humano. Me ayudó con mi problema de conjuntivitis alérgica. Lo recomiendo 100%."</p>
+                    <div class="testimonial-author">
+                        <p class="author-name">Andrea Silva</p>
+                        <p class="author-verified">✓ Paciente verificado</p>
+                    </div>
                 </div>
             </div>
         </div>

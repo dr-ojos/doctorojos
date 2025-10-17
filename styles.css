@@ -264,132 +264,104 @@ nav {
     background: transparent;
 }
 
-/* Testimonials Section */
-.testimonials {
-    background: #ffffff;
-    padding: 6rem 2rem;
-    position: relative;
+/* Google Reviews Section */
+.google-reviews {
+    padding: 1.5rem 2rem 3rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    text-align: center;
 }
 
-.testimonials-container {
-    max-width: 1280px;
+.reviews-container {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.testimonials-header {
-    text-align: center;
-    margin-bottom: 4rem;
+.reviews-container h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.testimonials-header h2 {
-    font-size: 3.5rem;
-    color: var(--gray-900);
-    margin-bottom: 1.5rem;
-    font-weight: 900;
-    letter-spacing: -2px;
-}
-
-.overall-rating {
+.rating-display {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 30px;
+    box-shadow: var(--shadow-xl);
+}
+
+.stars {
+    display: flex;
+    gap: 0.5rem;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.star {
+    filter: drop-shadow(0 2px 4px rgba(251, 188, 4, 0.3));
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.star:nth-child(1) { animation-delay: 0s; }
+.star:nth-child(2) { animation-delay: 0.1s; }
+.star:nth-child(3) { animation-delay: 0.2s; }
+.star:nth-child(4) { animation-delay: 0.3s; }
+.star:nth-child(5) { animation-delay: 0.4s; }
+
+.rating-text {
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
-.overall-rating .stars {
-    display: flex;
-    gap: 0.25rem;
+.rating-score {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    line-height: 1;
 }
 
-.overall-rating .star {
-    font-size: 2rem;
-    color: #FFB800;
-    text-shadow: 0 2px 4px rgba(255, 184, 0, 0.3);
-}
-
-.rating-text {
-    font-size: 1.125rem;
+.rating-count {
+    font-size: 1.25rem;
     color: var(--gray-600);
     font-weight: 500;
 }
 
-.rating-text strong {
-    color: var(--gray-900);
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-}
-
-.testimonial-card {
+.btn-google-reviews {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.15rem 2.5rem;
     background: white;
-    padding: 2.5rem;
-    border-radius: 24px;
-    box-shadow: var(--shadow-lg);
-    border: 2px solid var(--gray-200);
-    transition: all var(--transition-bounce);
-    position: relative;
-}
-
-.testimonial-card::before {
-    content: '"';
-    position: absolute;
-    top: 1rem;
-    left: 1.5rem;
-    font-size: 5rem;
-    color: var(--primary-orange);
-    opacity: 0.1;
-    font-family: Georgia, serif;
-    line-height: 1;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-2xl);
-    border-color: var(--primary-orange);
-}
-
-.testimonial-stars {
-    display: flex;
-    gap: 0.25rem;
-    margin-bottom: 1.25rem;
-}
-
-.testimonial-stars .star {
-    font-size: 1.25rem;
-    color: #FFB800;
-}
-
-.testimonial-text {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--gray-700);
-    margin-bottom: 1.5rem;
-    font-style: italic;
-    position: relative;
-    z-index: 1;
-}
-
-.testimonial-author {
-    border-top: 2px solid var(--gray-200);
-    padding-top: 1rem;
-}
-
-.author-name {
-    font-weight: 700;
     color: var(--gray-900);
-    font-size: 1.05rem;
-    margin-bottom: 0.25rem;
+    text-decoration: none;
+    border-radius: 60px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    transition: all var(--transition-bounce);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--gray-200);
 }
 
-.author-verified {
-    font-size: 0.9rem;
-    color: var(--primary-orange);
-    font-weight: 600;
+.btn-google-reviews:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    border-color: #4285F4;
+}
+
+.btn-google-reviews svg {
+    transition: transform var(--transition-bounce);
+}
+
+.btn-google-reviews:hover svg {
+    transform: scale(1.1);
 }
 
 /* Services Section mejorado */
@@ -947,12 +919,51 @@ footer p {
         font-size: 1rem;
     }
 
-    .testimonials {
-        padding: 4rem 1.5rem;
+    .google-reviews {
+        padding: 0.5rem 1.5rem 2rem 1.5rem;
     }
 
-    .testimonials-header h2 {
+    .reviews-container h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .rating-display {
+        padding: 1.5rem 1rem;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .stars {
+        gap: 0.15rem;
+    }
+
+    .star {
+        width: 32px;
+        height: 32px;
+    }
+
+    .rating-text {
+        gap: 0.25rem;
+    }
+
+    .rating-score {
         font-size: 2.25rem;
+    }
+
+    .rating-count {
+        font-size: 0.95rem;
+    }
+
+    .btn-google-reviews {
+        padding: 0.95rem 1.75rem;
+        font-size: 0.95rem;
+        gap: 0.5rem;
+    }
+
+    .btn-google-reviews svg {
+        width: 20px;
+        height: 20px;
     }
 
     .overall-rating .star {
@@ -1119,6 +1130,43 @@ footer p {
     .btn-primary {
         padding: 0.9rem 2.5rem;
         font-size: 0.95rem;
+    }
+
+    .google-reviews {
+        padding: 0.5rem 1rem 1.5rem 1rem;
+    }
+
+    .reviews-container h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .rating-display {
+        padding: 1.25rem 0.75rem;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .stars {
+        gap: 0.1rem;
+    }
+
+    .star {
+        width: 28px;
+        height: 28px;
+    }
+
+    .rating-score {
+        font-size: 2rem;
+    }
+
+    .rating-count {
+        font-size: 0.875rem;
+    }
+
+    .btn-google-reviews {
+        padding: 0.85rem 1.5rem;
+        font-size: 0.875rem;
     }
 
     .about-image {

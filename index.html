@@ -365,70 +365,6 @@
     }
     </script>
 
-    <!-- Reviews Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Physician",
-        "name": "Dr. José Peña"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "María González"
-      },
-      "reviewBody": "Excelente profesional, muy dedicado y preocupado por sus pacientes. Me realizó cirugía refractiva y el resultado fue perfecto. Totalmente recomendado."
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Physician",
-        "name": "Dr. José Peña"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Carlos Rodríguez"
-      },
-      "reviewBody": "Muy buen oftalmólogo, explica todo con claridad y paciencia. El tratamiento para mi ojo seco ha sido muy efectivo. Gracias Dr. Peña."
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Physician",
-        "name": "Dr. José Peña"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Andrea Silva"
-      },
-      "reviewBody": "Atención de primera calidad. El Dr. Peña es muy profesional y humano. Me ayudó con mi problema de conjuntivitis alérgica. Lo recomiendo 100%."
-    }
-    </script>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -539,69 +475,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonials-header">
-                <h2>Lo que dicen nuestros pacientes</h2>
-                <div class="overall-rating">
-                    <div class="stars">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <p class="rating-text"><strong>5.0</strong> basado en reseñas de Google</p>
-                </div>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <p class="testimonial-text">"Excelente profesional, muy dedicado y preocupado por sus pacientes. Me realizó cirugía refractiva y el resultado fue perfecto. Totalmente recomendado."</p>
-                    <div class="testimonial-author">
-                        <p class="author-name">María González</p>
-                        <p class="author-verified">✓ Paciente verificado</p>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <p class="testimonial-text">"Muy buen oftalmólogo, explica todo con claridad y paciencia. El tratamiento para mi ojo seco ha sido muy efectivo. Gracias Dr. Peña."</p>
-                    <div class="testimonial-author">
-                        <p class="author-name">Carlos Rodríguez</p>
-                        <p class="author-verified">✓ Paciente verificado</p>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                        <span class="star">★</span>
-                    </div>
-                    <p class="testimonial-text">"Atención de primera calidad. El Dr. Peña es muy profesional y humano. Me ayudó con mi problema de conjuntivitis alérgica. Lo recomiendo 100%."</p>
-                    <div class="testimonial-author">
-                        <p class="author-name">Andrea Silva</p>
-                        <p class="author-verified">✓ Paciente verificado</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Services Section -->
     <section id="servicios" class="services" aria-labelledby="services-heading">
         <div class="services-container">
@@ -643,6 +516,50 @@
             <p>Nací en la ciudad De Molina, séptima región de Chile. Migré a la ciudad de Santiago para estudiar Medicina en la Universidad de Santiago de Chile, egresando el año 2003.</p>
             <p>Después ingresé en el año 2009 a la Universidad de Chile para estudiar la especialidad de Oftalmología.</p>
             <p>Pero, como soy curioso y me gusta aprender, también estudié un postítulo de Administración y Gestión en Salud en la Universidad de los Andes, un postítulo en Arte en la Universidad Católica y además se me ocurrió fundar una Startup llamada Sobrecupos.com. Me gusta mucho el chocolate y leer.</p>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="google-reviews">
+        <div class="reviews-container">
+            <h2>Lo que dicen nuestros pacientes</h2>
+
+            <div class="rating-display">
+                <div class="stars">
+                    <svg class="star" width="48" height="48" viewBox="0 0 24 24" fill="#FBBC04">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <svg class="star" width="48" height="48" viewBox="0 0 24 24" fill="#FBBC04">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <svg class="star" width="48" height="48" viewBox="0 0 24 24" fill="#FBBC04">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <svg class="star" width="48" height="48" viewBox="0 0 24 24" fill="#FBBC04">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <svg class="star" width="48" height="48" viewBox="0 0 24 24" fill="#FBBC04">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                </div>
+                <div class="rating-text">
+                    <span class="rating-score">5.0</span>
+                    <span class="rating-count">47 reseñas en Google</span>
+                </div>
+            </div>
+
+            <a href="https://www.google.com/maps/place/Dr.+Jos%C3%A9+Pe%C3%B1a+Martinez/@-33.4165164,-70.6007564,17z/data=!4m8!3m7!1s0x9662cf658e13a071:0xc455a83f7ba98a99!8m2!3d-33.4165164!4d-70.6007564!9m1!1b1!16s%2Fg%2F11clvbw9_b?entry=ttu"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-google-reviews">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+                Ver reseñas en Google
+            </a>
         </div>
     </section>
 
